@@ -30,7 +30,7 @@ function createAgentModule() {
             <div class="agent-logo">✈️</div>
             <div class="agent-branding">
                 <h3>Delta Air Lines AI Guide</h3>
-                <p>Your personal flight assistant</p>
+                <p>Your personal flight assistant • Powered by Gist ✨</p>
             </div>
         </div>
         <div class="ai-agent-body">
