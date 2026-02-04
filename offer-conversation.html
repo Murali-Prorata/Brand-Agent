@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer | Conversation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>✈️ Travel Explorer</h1>
+            <nav>
+                <a href="#">Destinations</a>
+                <a href="#">Guides</a>
+                <a href="#">Deals</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="travel-article">
+            <div class="article-header">
+                <h1>Planning a Family Trip to Italy</h1>
+                <p class="article-meta">By Sarah Thompson | March 15, 2026 | 12 min read</p>
+                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200&h=600&fit=crop" alt="Italian landscape" class="hero-image">
+            </div>
+
+            <div class="article-content">
+                <div class="conversation-wrap">
+                    <div class="conversation-header">
+                        <h2>Trip Planning Conversation</h2>
+                        <span class="article-meta">Live guidance</span>
+                    </div>
+                    <div class="conversation-body">
+                        <p class="conversation-note">You’re chatting with the Travel Explorer assistant. Your question is highlighted below.</p>
+                        <div class="conversation-thread" id="conversationThread"></div>
+
+                        <div class="offer-module" style="margin-top: 20px;">
+                            <div class="offer-search">
+                                <span class="offer-search-icon">🔍</span>
+                                <input type="text" placeholder="Ask a follow-up question" aria-label="Ask a follow-up question" id="offerFollowupInput">
+                                <button class="offer-enter" aria-label="Submit follow-up">
+                                    <span class="offer-enter-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="ad-offers">
+                            <div class="ad-label">Ad</div>
+                            <div class="ad-label-text">Offers for you</div>
+                            <div class="ad-offers-row">
+                                <div class="ad-offer-card">
+                                    <div class="ad-offer-header">Hotel Artemide</div>
+                                    <div class="ad-offer-meta">Rome, Italy · 4-star · Via Nazionale</div>
+                                    <div class="ad-offer-body">
+                                        <p>Family-friendly rooms, rooftop dining, and walkable access to Termini Station.</p>
+                                        <div class="ad-offer-price">From $189/night</div>
+                                    </div>
+                                </div>
+                                <div class="ad-offer-card">
+                                    <div class="ad-offer-header">Hotel Quirinale</div>
+                                    <div class="ad-offer-meta">Rome, Italy · 4-star · Monti district</div>
+                                    <div class="ad-offer-body">
+                                        <p>Classic Roman charm near the Opera House with spacious family suites.</p>
+                                        <div class="ad-offer-price">From $175/night</div>
+                                    </div>
+                                </div>
+                                <div class="ad-offer-card">
+                                    <div class="ad-offer-header">iQ Hotel Roma</div>
+                                    <div class="ad-offer-meta">Rome, Italy · 4-star · Piazza della Repubblica</div>
+                                    <div class="ad-offer-body">
+                                        <p>Modern amenities, rooftop pool, and kid-friendly meal options.</p>
+                                        <div class="ad-offer-price">From $165/night</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="related-questions">
+                            <h3>Related questions</h3>
+                            <div class="related-list" id="relatedList"></div>
+                        </div>
+                        <div class="related-questions">
+                            <a href="offer.html" class="related-chip back-home">Back to home page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Travel Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="offer-conversation.js"></script>
+</body>
+</html>

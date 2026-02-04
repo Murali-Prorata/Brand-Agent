@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT - Planning Italy Trip</title>
+    <link rel="stylesheet" href="conversation-styles.css">
+</head>
+<body>
+    <div class="chat-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <button class="new-chat-btn">+ New chat</button>
+            </div>
+            <div class="chat-history">
+                <div class="history-item active">
+                    <span>🇮🇹</span> Planning Italy Trip
+                </div>
+                <div class="history-item">
+                    <span>📊</span> Budget spreadsheet help
+                </div>
+                <div class="history-item">
+                    <span>💻</span> React component ideas
+                </div>
+                <div class="history-item">
+                    <span>🍳</span> Pasta recipes
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">👤</div>
+                    <span>User</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-main">
+            <div class="chat-header">
+                <h1>ChatGPT 4</h1>
+                <div class="header-actions">
+                    <button class="icon-btn">🔍</button>
+                    <button class="icon-btn">⚙️</button>
+                </div>
+            </div>
+
+            <div class="conversation-container" id="conversationContainer">
+                <!-- Message 1: User -->
+                <div class="message-group user-message">
+                    <div class="message-avatar">👤</div>
+                    <div class="message-bubble">
+                        <p>I'm planning a family trip to Italy this fall. We have 2 kids (ages 8 and 12) and want to visit Rome, Florence, and Venice. What should I know about planning this trip?</p>
+                    </div>
+                </div>
+
+                <!-- Message 2: Assistant -->
+                <div class="message-group assistant-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-bubble">
+                        <p>That sounds like an amazing family adventure! Italy is wonderful for kids that age. Here's what I'd recommend for your planning:</p>
+                        
+                        <h3>Best Time to Visit</h3>
+                        <p>Fall is perfect! September-October offers:</p>
+                        <ul>
+                            <li>Pleasant weather (60-75°F)</li>
+                            <li>Fewer crowds than summer</li>
+                            <li>Kids are back in school, so attractions are less busy</li>
+                            <li>Harvest season means amazing food festivals</li>
+                        </ul>
+
+                        <h3>Suggested Itinerary (10-12 days)</h3>
+                        <ul>
+                            <li><strong>Rome:</strong> 4 days - Colosseum, Vatican, Trevi Fountain, Roman Forum</li>
+                            <li><strong>Florence:</strong> 3 days - Uffizi Gallery, Duomo, day trip to Tuscan countryside</li>
+                            <li><strong>Venice:</strong> 3 days - St. Mark's Square, gondola rides, Murano island</li>
+                        </ul>
+
+                        <h3>Travel Between Cities</h3>
+                        <p>High-speed trains (Trenitalia or Italo) are the best option. Kids love the trains! Book tickets in advance for better prices.</p>
+
+                        <h3>Kid-Friendly Tips</h3>
+                        <ul>
+                            <li>Book skip-the-line tickets for major attractions</li>
+                            <li>Plan gelato breaks to keep energy up</li>
+                            <li>Stay in central locations to minimize walking</li>
+                            <li>Consider apartments over hotels for more space</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Message 3: User -->
+                <div class="message-group user-message">
+                    <div class="message-avatar">👤</div>
+                    <div class="message-bubble">
+                        <p>This is really helpful! What about flights? How much should I budget for airfare from the US, and when's the best time to book?</p>
+                    </div>
+                </div>
+
+                <!-- Delta AI Agent will be inserted here -->
+                <div id="agent-insertion-point"></div>
+
+                <!-- Message 4: User -->
+                <div class="message-group user-message">
+                    <div class="message-avatar">👤</div>
+                    <div class="message-bubble">
+                        <p>What are some must-try foods in each city?</p>
+                    </div>
+                </div>
+
+                <!-- Message 5: Assistant -->
+                <div class="message-group assistant-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-bubble">
+                        <p>Great question! Each city has its own culinary specialties that your family should definitely try:</p>
+                        
+                        <h3>Rome 🍝</h3>
+                        <ul>
+                            <li><strong>Carbonara:</strong> Pasta with eggs, pecorino cheese, guanciale</li>
+                            <li><strong>Cacio e Pepe:</strong> Simple but perfect - pasta, cheese, pepper</li>
+                            <li><strong>Supplì:</strong> Fried rice balls (kids love these!)</li>
+                            <li><strong>Roman Pizza:</strong> Thin, crispy crust</li>
+                        </ul>
+
+                        <h3>Florence 🥩</h3>
+                        <ul>
+                            <li><strong>Bistecca alla Fiorentina:</strong> Huge T-bone steak</li>
+                            <li><strong>Ribollita:</strong> Tuscan bread soup</li>
+                            <li><strong>Schiacciata:</strong> Flatbread sandwich</li>
+                            <li><strong>Cantucci:</strong> Almond biscotti with dessert wine</li>
+                        </ul>
+
+                        <h3>Venice 🦞</h3>
+                        <ul>
+                            <li><strong>Sarde in Saor:</strong> Sweet and sour sardines</li>
+                            <li><strong>Risotto al Nero di Seppia:</strong> Black squid ink risotto</li>
+                            <li><strong>Fritto Misto:</strong> Mixed fried seafood</li>
+                            <li><strong>Cicchetti:</strong> Venetian tapas (great for kids to try different things)</li>
+                        </ul>
+
+                        <p>Pro tip: Look for restaurants away from major tourist spots. If you see menus in multiple languages with photos, that's usually a red flag. Ask locals or your hotel for recommendations!</p>
+                    </div>
+                </div>
+
+                <!-- Message 6: User -->
+                <div class="message-group user-message">
+                    <div class="message-avatar">👤</div>
+                    <div class="message-bubble">
+                        <p>Perfect! One more thing - any tips for keeping the kids engaged at historical sites? I worry they might get bored.</p>
+                    </div>
+                </div>
+
+                <!-- Message 7: Assistant -->
+                <div class="message-group assistant-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-bubble">
+                        <p>Excellent concern! Here are proven strategies to keep kids engaged at historical sites:</p>
+
+                        <h3>Before You Go</h3>
+                        <ul>
+                            <li>Watch kid-friendly documentaries about Rome/gladiators</li>
+                            <li>Read books like "Magic Tree House: Vacation Under the Volcano"</li>
+                            <li>Show them pictures and get them excited about specific things</li>
+                        </ul>
+
+                        <h3>At the Sites</h3>
+                        <ul>
+                            <li><strong>Scavenger hunts:</strong> Create lists of things to find (specific columns, animals in mosaics, etc.)</li>
+                            <li><strong>Story-telling:</strong> Make history come alive with dramatic retellings</li>
+                            <li><strong>Photography missions:</strong> Let them be "official trip photographers"</li>
+                            <li><strong>Sketching:</strong> Bring notebooks to draw what they see</li>
+                            <li><strong>Guided tours for kids:</strong> Many attractions offer family-specific tours</li>
+                        </ul>
+
+                        <h3>Timing Strategies</h3>
+                        <ul>
+                            <li>Visit major sites early morning when kids are fresh</li>
+                            <li>Limit to 1-2 big attractions per day</li>
+                            <li>Alternate museum days with outdoor/fun activities</li>
+                            <li>Build in playground time at parks</li>
+                        </ul>
+
+                        <h3>Rewards System</h3>
+                        <p>Consider a small reward system - after visiting a historical site, they get to choose the next gelato stop or activity. This gives them something to look forward to!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea placeholder="Message ChatGPT..." rows="1"></textarea>
+                    <button class="send-btn">↑</button>
+                </div>
+                <p class="disclaimer">ChatGPT can make mistakes. Check important info.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="conversation-script.js"></script>
+</body>
+</html>

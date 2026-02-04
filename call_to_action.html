@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer | Conversation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>✈️ Travel Explorer</h1>
+            <nav>
+                <a href="#">Destinations</a>
+                <a href="#">Guides</a>
+                <a href="#">Deals</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="travel-article">
+            <div class="article-header">
+                <h1>Planning a Family Trip to Italy</h1>
+                <p class="article-meta">By Sarah Thompson | March 15, 2026 | 12 min read</p>
+                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200&h=600&fit=crop" alt="Italian landscape" class="hero-image">
+            </div>
+
+            <div class="article-content">
+                <div class="conversation-wrap">
+                    <div class="conversation-header">
+                        <h2>Trip Planning Conversation</h2>
+                        <span class="article-meta">Live guidance</span>
+                    </div>
+                    <div class="conversation-body">
+                        <p class="conversation-note">You're chatting with the Travel Explorer assistant. Your question is highlighted below.</p>
+                        <div class="conversation-thread" id="conversationThread"></div>
+
+                        <div class="offer-module" style="margin-top: 20px;">
+                            <div class="offer-search">
+                                <span class="offer-search-icon">🔍</span>
+                                <input type="text" placeholder="Ask a follow-up question" aria-label="Ask a follow-up question" id="offerFollowupInput">
+                                <button class="offer-enter" aria-label="Submit follow-up">
+                                    <span class="offer-enter-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="ad-offers">
+                            <div class="ad-label">Ad</div>
+                            <div class="ad-offers-row">
+                                <button class="cta-button" id="flightBtn">Search for Flights</button>
+                                <button class="cta-button" id="hotelBtn">Search for Hotels</button>
+                                <button class="cta-button" id="cabBtn">Reserve a Cab</button>
+                            </div>
+                        </div>
+
+                        <div class="related-questions">
+                            <h3>Related questions</h3>
+                            <div class="related-list" id="relatedList"></div>
+                        </div>
+                        <div class="related-questions">
+                            <a href="offer.html" class="related-chip back-home">Back to home page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Travel Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Flight Modal -->
+    <div id="flightModal" class="cta-modal">
+        <div class="cta-modal-content">
+            <span class="cta-modal-close" data-modal="flightModal">&times;</span>
+            <h2>Search for Flights</h2>
+            <form class="cta-form">
+                <div class="cta-form-group">
+                    <label>Passenger 1 Name</label>
+                    <input type="text" placeholder="Enter passenger 1 name" required>
+                </div>
+                <div class="cta-form-group">
+                    <label>Passenger 2 Name</label>
+                    <input type="text" placeholder="Enter passenger 2 name" required>
+                </div>
+                <div class="cta-form-group">
+                    <label>From</label>
+                    <input type="text" placeholder="Enter departure city" required>
+                </div>
+                <div class="cta-form-group">
+                    <label>To</label>
+                    <input type="text" placeholder="Enter destination city" required>
+                </div>
+                <div class="cta-form-group">
+                    <label>Departure Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="cta-form-group">
+                    <label>Return Date</label>
+                    <input type="date" required>
+                </div>
+                <button type="submit" class="cta-submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Hotel Modal -->
+    <div id="hotelModal" class="cta-modal">
+        <div class="cta-modal-content">
+            <span class="cta-modal-close" data-modal="hotelModal">&times;</span>
+            <h2>Search for Hotels</h2>
+            <form class="cta-form">
+                <div class="cta-form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="cta-form-group">
+                    <label>Hotel Name</label>
+                    <input type="text" placeholder="Enter hotel name" required>
+                </div>
+                <div class="cta-form-group">
+                    <label>City</label>
+                    <input type="text" placeholder="Enter city" required>
+                </div>
+                <div class="cta-form-group">
+                    <label>Check-in Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="cta-form-group">
+                    <label>Check-out Date</label>
+                    <input type="date" required>
+                </div>
+                <button type="submit" class="cta-submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cab Modal -->
+    <div id="cabModal" class="cta-modal">
+        <div class="cta-modal-content">
+            <span class="cta-modal-close" data-modal="cabModal">&times;</span>
+            <h2>Reserve a Cab</h2>
+            <form class="cta-form">
+                <div class="cta-form-group">
+                    <label>Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="cta-form-group">
+                    <label>Pick-up Time</label>
+                    <input type="time" required>
+                </div>
+                <div class="cta-form-group">
+                    <label>Pick-up Location</label>
+                    <input type="text" placeholder="Enter pick-up location" required>
+                </div>
+                <div class="cta-form-group">
+                    <label>Drop-off Location</label>
+                    <input type="text" placeholder="Enter drop-off location" required>
+                </div>
+                <button type="submit" class="cta-submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="offer-conversation.js"></script>
+    <script src="call_to_action.js"></script>
+</body>
+</html>

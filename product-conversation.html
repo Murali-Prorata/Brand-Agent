@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer | Conversation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>✈️ Travel Explorer</h1>
+            <nav>
+                <a href="#">Destinations</a>
+                <a href="#">Guides</a>
+                <a href="#">Deals</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="travel-article">
+            <div class="article-header">
+                <h1>Planning a Family Trip to Italy</h1>
+                <p class="article-meta">By Sarah Thompson | March 15, 2026 | 12 min read</p>
+                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200&h=600&fit=crop" alt="Italian landscape" class="hero-image">
+            </div>
+
+            <div class="article-content">
+                <div class="conversation-wrap">
+                    <div class="conversation-header">
+                        <h2>Trip Planning Conversation</h2>
+                        <span class="article-meta">Live guidance</span>
+                    </div>
+                    <div class="conversation-body">
+                        <p class="conversation-note">You're chatting with the Travel Explorer assistant. Your question is highlighted below.</p>
+                        <div class="conversation-thread" id="conversationThread"></div>
+
+                        <div class="offer-module" style="margin-top: 20px;">
+                            <div class="offer-search">
+                                <span class="offer-search-icon">🔍</span>
+                                <input type="text" placeholder="Ask a follow-up question" aria-label="Ask a follow-up question" id="offerFollowupInput">
+                                <button class="offer-enter" aria-label="Submit follow-up">
+                                    <span class="offer-enter-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="ad-offers">
+                            <div class="ad-label">Ad</div>
+                            <div class="ad-label-text">Products for you</div>
+                            <div class="ad-offers-row">
+                                <div class="ad-product-card">
+                                    <div class="ad-product-image" style="background: url('https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=200&fit=crop'); background-size: cover; background-position: center;"></div>
+                                    <div class="ad-product-body">
+                                        <div class="ad-product-name">Travel Backpack Pro</div>
+                                        <div class="ad-product-seller">by TravelGear Co.</div>
+                                        <div class="ad-product-description">Lightweight, durable 40L backpack with multiple compartments perfect for family trips.</div>
+                                        <div class="ad-product-price">$89.99</div>
+                                    </div>
+                                </div>
+                                <div class="ad-product-card">
+                                    <div class="ad-product-image" style="background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=300&h=200&fit=crop'), linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: bold; text-align: center; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Learn Italian</div>
+                                    <div class="ad-product-body">
+                                        <div class="ad-product-name">English to Italian Dictionary</div>
+                                        <div class="ad-product-seller">by Lingua Translations</div>
+                                        <div class="ad-product-description">Comprehensive pocket dictionary with 10,000+ words, phrases, and pronunciation guides for travelers.</div>
+                                        <div class="ad-product-price">$19.99</div>
+                                    </div>
+                                </div>
+                                <div class="ad-product-card">
+                                    <div class="ad-product-image" style="background: url('https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=300&h=200&fit=crop'); background-size: cover; background-position: center;"></div>
+                                    <div class="ad-product-body">
+                                        <div class="ad-product-name">Luggage Organizer Set</div>
+                                        <div class="ad-product-seller">by PackSmart</div>
+                                        <div class="ad-product-description">Set of 4 packing cubes to organize clothes and maximize suitcase space efficiently.</div>
+                                        <div class="ad-product-price">$24.99</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="related-questions">
+                            <h3>Related questions</h3>
+                            <div class="related-list" id="relatedList"></div>
+                        </div>
+                        <div class="related-questions">
+                            <a href="offer.html" class="related-chip back-home">Back to home page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Travel Explorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="product-conversation.js"></script>
+</body>
+</html>

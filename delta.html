@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Air Lines | Official Site - Flights, Deals & Travel</title>
+    <link rel="stylesheet" href="delta-styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="delta-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-left">
+                    <div class="delta-logo">Δ</div>
+                    <span class="delta-text">DELTA</span>
+                </div>
+                <nav class="header-nav">
+                    <a href="#" class="nav-item">Book</a>
+                    <a href="#" class="nav-item">Check In</a>
+                    <a href="#" class="nav-item">Trip</a>
+                    <a href="#" class="nav-item">Help</a>
+                    <a href="#" class="nav-item">SkyMiles</a>
+                    <button class="btn-sign-in">Sign In</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- AI Agent Module - Top of Page -->
+    <div class="agent-banner-container" id="agentBannerContainer"></div>
+
+    <!-- Hero Section with Search -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Plan Your Perfect Trip</h1>
+            <p>Find flights, deals, and vacations to over 300 destinations worldwide</p>
+            
+            <div class="search-container">
+                <div class="search-tabs">
+                    <button class="tab-btn active" data-tab="flights">Flights</button>
+                    <button class="tab-btn" data-tab="hotels">Hotels</button>
+                    <button class="tab-btn" data-tab="vacations">Vacation Packages</button>
+                    <button class="tab-btn" data-tab="car">Car Rentals</button>
+                </div>
+
+                <div class="search-form">
+                    <div class="search-group">
+                        <label>From</label>
+                        <input type="text" placeholder="Departure city or airport">
+                    </div>
+                    <div class="search-group">
+                        <label>To</label>
+                        <input type="text" placeholder="Destination city or airport">
+                    </div>
+                    <div class="search-group">
+                        <label>Depart</label>
+                        <input type="date">
+                    </div>
+                    <div class="search-group">
+                        <label>Return</label>
+                        <input type="date">
+                    </div>
+                    <div class="search-group">
+                        <label>Passengers</label>
+                        <select>
+                            <option>1 Passenger</option>
+                            <option>2 Passengers</option>
+                            <option>3 Passengers</option>
+                            <option>4 Passengers</option>
+                            <option>5+ Passengers</option>
+                        </select>
+                    </div>
+                    <button class="btn-search">Search Flights</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Featured Destinations -->
+            <section class="featured-section">
+                <h2>Featured Destinations</h2>
+                <div class="destinations-grid">
+                    <div class="destination-card">
+                        <div class="destination-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span class="destination-emoji">🇮🇹</span>
+                        </div>
+                        <h3>Italy</h3>
+                        <p>From $475</p>
+                        <a href="#" class="link">View Flights →</a>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span class="destination-emoji">🇬🇧</span>
+                        </div>
+                        <h3>London</h3>
+                        <p>From $350</p>
+                        <a href="#" class="link">View Flights →</a>
+                    </div>
+                    
+                    <div class="destination-card">
+                        <div class="destination-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span class="destination-emoji">🇯🇵</span>
+                        </div>
+                        <h3>Tokyo</h3>
+                        <p>From $650</p>
+                        <a href="#" class="link">View Flights →</a>
+                    </div>
+
+                    <div class="destination-card">
+                        <div class="destination-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span class="destination-emoji">🇲🇽</span>
+                        </div>
+                        <h3>Cancun</h3>
+                        <p>From $275</p>
+                        <a href="#" class="link">View Flights →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Current Deals Section -->
+            <section class="deals-section">
+                <h2>Current Deals & Offers</h2>
+                <div class="deals-grid">
+                    <div class="deal-card">
+                        <div class="deal-label">🎉 Limited Time</div>
+                        <h3>Fall Getaways</h3>
+                        <p>Book your fall adventure now and save up to 30% on flights to Europe</p>
+                        <a href="#" class="btn-secondary">Learn More</a>
+                    </div>
+                    
+                    <div class="deal-card">
+                        <div class="deal-label">🏖️ Vacation Package</div>
+                        <h3>All-Inclusive Resorts</h3>
+                        <p>Flight + Hotel bundles with free meals, drinks, and activities</p>
+                        <a href="#" class="btn-secondary">Explore Packages</a>
+                    </div>
+                    
+                    <div class="deal-card">
+                        <div class="deal-label">👨‍👩‍👧‍👦 Family Special</div>
+                        <h3>Family Travel Deals</h3>
+                        <p>Book for 4+ and get special pricing plus extra baggage allowance</p>
+                        <a href="#" class="btn-secondary">View Family Deals</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Delta -->
+            <section class="why-delta-section">
+                <h2>Why Fly Delta?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✈️</div>
+                        <h3>More Routes</h3>
+                        <p>Daily flights to over 300 destinations worldwide</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💺</div>
+                        <h3>Comfort First</h3>
+                        <p>Extra legroom seats and modern aircraft on every flight</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎁</div>
+                        <h3>SkyMiles Rewards</h3>
+                        <p>Earn miles on every flight and use them for upgrades</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📱</div>
+                        <h3>Mobile First</h3>
+                        <p>Book, check in, and track your flight from your phone</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="delta-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Plan & Book</h4>
+                    <ul>
+                        <li><a href="#">Book a Flight</a></li>
+                        <li><a href="#">Manage Trip</a></li>
+                        <li><a href="#">Check In</a></li>
+                        <li><a href="#">Flight Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>SkyMiles</h4>
+                    <ul>
+                        <li><a href="#">Earn Miles</a></li>
+                        <li><a href="#">Redeem Miles</a></li>
+                        <li><a href="#">Elite Status</a></li>
+                        <li><a href="#">Credit Card</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Travel Info</h4>
+                    <ul>
+                        <li><a href="#">Baggage Policy</a></li>
+                        <li><a href="#">Change Flight</a></li>
+                        <li><a href="#">Seat Selection</a></li>
+                        <li><a href="#">Pet Travel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Delta Air Lines. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="delta-script.js"></script>
+</body>
+</html>
